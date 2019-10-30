@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <meta charset="utf-8">
 
 <!-- Load d3.js -->
