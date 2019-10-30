@@ -1,3 +1,6 @@
+This visualization demonstrates the percentage of home (Germany) vs. away races in which Sebastian Vettel did not finish between 2016-2019. 
+
+
 <meta charset="utf-8">
 
 <!-- Load d3.js -->
