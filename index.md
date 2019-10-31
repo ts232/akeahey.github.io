@@ -2,17 +2,17 @@
 
 <style>
 .button {
-  background-color: #dcdcdc;
-  border: none;
-  color: white;
-  padding: 15px 25px;
+  background-color: #f5f5f5;
+  border-color: #dcdcdc;
+  color: black;
+  padding: 10px 20px;
   text-align: center;
   font-size: 16px;
   cursor: pointer;
 }
 
 .button:hover {
-  background-color: gainsboro;  
+  background-color: whitesmoke;  
 }
 
  .h1 {
