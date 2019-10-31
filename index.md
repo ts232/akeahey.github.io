@@ -50,7 +50,6 @@ Giovinazzi (Italy)</p>
 
 However, of the 126 away races that occured in 2019 among the same 14 drivers, 18 ended in DNF, about 14%. </p>
 
-</body>
 
 <!-- Load d3.js -->
 <script src="https://d3js.org/d3.v4.js"></script>
@@ -130,3 +129,4 @@ function update(data) {
 update(data3)
 
 </script>
+</body>
