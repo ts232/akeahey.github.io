@@ -59,8 +59,8 @@ However, of the 126 away races that occured in 2019 among the same 14 drivers, 1
 </body>
 
 <!-- Add 2 buttons -->
-<button class = "button" onclick="update(data1)">Away</button>
-<button class = "button" onclick="update(data2)">Home</button>
+<button class = "button" onclick="update(data3)">Away</button>
+<button class = "button" onclick="update(data4)">Home</button>
 
 <!-- Create a div where the graph will take place -->
 <div id="2019"></div>
