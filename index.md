@@ -89,31 +89,6 @@ var data2 = {Finished: 86, DNF: 14}
 
 var color = d3.scaleOrdinal(['#dd0000', '#f08080'])
 
-var legend = d3.select('svg')
-  .append("g")
-  .selectAll("g")
-  .data(color.domain())
-  .enter()
-  .append("g")
-    .attr('class', 'legend')
-    .attr('transform', function(d, i) {
-      var height = legendRectSize;
-      var x = 0;
-      var y = i * height;
-      return 'translate(' + x + ',' + y + ')';
-    });
-    
-legend.append('rect')
-    .attr('width', legendRectSize)
-    .attr('height', legendRectSize)
-    .style('fill', color)
-    .style('stroke', color);
-
-legend.append('text')
-    .attr('x', legendRectSize + legendSpacing)
-    .attr('y', legendRectSize - legendSpacing)
-    .text(function(d) { return d; });
-
 function update(data) {
 
   var pie = d3.pie()
@@ -146,5 +121,30 @@ function update(data) {
 }
 
 update(data1)
+
+var legend = d3.select('svg')
+  .append("g")
+  .selectAll("g")
+  .data(color.domain())
+  .enter()
+  .append("g")
+    .attr('class', 'legend')
+    .attr('transform', function(d, i) {
+      var height = legendRectSize;
+      var x = 0;
+      var y = i * height;
+      return 'translate(' + x + ',' + y + ')';
+    });
+    
+legend.append('rect')
+    .attr('width', legendRectSize)
+    .attr('height', legendRectSize)
+    .style('fill', color)
+    .style('stroke', color);
+
+legend.append('text')
+    .attr('x', legendRectSize + legendSpacing)
+    .attr('y', legendRectSize - legendSpacing)
+    .text(function(d) { return d; });
 
 </script>
