@@ -23,6 +23,12 @@
   color: black;
   font-family: "Verdana", sans-serif;
 }
+  .title {
+  text-align: center;
+  color: black;
+  font-family: "Verdana", sans-serif;
+}
+
 </style>
 
 <!-- Load d3.js -->
@@ -54,6 +60,8 @@ Giovinazzi (Italy)</p>
 <p>Of the 14 home races that occured, 4 of them ended in DNF for the home drivers, a percentage of about 29%.<br>
 
 However, of the 126 away races that occured in 2019 among the same 14 drivers, 18 ended in DNF, about 14%. </p>
+
+<h3 class = "title">Finished vs. Unfinished Races</h3>
 
 <!-- Add 2 buttons -->
 <button class = "button" onclick="update(data1)">Away</button>
