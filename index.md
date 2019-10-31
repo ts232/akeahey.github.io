@@ -159,8 +159,8 @@ var svg = d3.select("#2019")
     .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
 
 // HAND ENTERED 2019 DATA
-var data3 = {Finished: 92, DNF: 8}
-var data4 = {Finished: 67, DNF: 34}
+var data3 = {Finished: 86, DNF: 14}
+var data4 = {Finished: 71, DNF: 29}
 
 
 var color = d3.scaleOrdinal(['#dd0000','#ffa07a'])
