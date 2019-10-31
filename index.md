@@ -40,7 +40,7 @@ var data1 = {a: 92, b: 8}
 var data2 = {a: 67, b: 34}
 
 // set the color scale
-var color = d3.scaleOrdinal(['#DD0000','#FFCE00'])
+var color = d3.scaleOrdinal(['#dd0000','#ffa600'])
 
 // A function that create / update the plot for a given variable:
 function update(data) {
