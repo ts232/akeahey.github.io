@@ -3,6 +3,22 @@ This visualization demonstrates the percentage of home (Germany) vs. away races 
 
 <meta charset="utf-8">
 
+<style>
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: green;
+}
+</style>
+
 <!-- Load d3.js -->
 <script src="https://d3js.org/d3.v4.js"></script>
 
@@ -10,8 +26,8 @@ This visualization demonstrates the percentage of home (Germany) vs. away races 
 <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
 
 <!-- Add 2 buttons -->
-<button onclick="update(data1)">Away</button>
-<button onclick="update(data2)">Home</button>
+<button class = "button" onclick="update(data1)">Away</button>
+<button class = "button" onclick="update(data2)">Home</button>
 
 <!-- Create a div where the graph will take place -->
 <div id="my_dataviz"></div>
