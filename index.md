@@ -39,7 +39,7 @@
 <h2 class = "h2">2019 Season</h2>
 
 <!-- Create a div where the graph will take place -->
-<div id="2019">
+<div id="2019"></div>
 
 
 <script>
@@ -106,8 +106,6 @@ function update(data) {
 update(data3)
 
 </script>
-
-</div>
 
 
 <!-- Add 2 buttons -->
