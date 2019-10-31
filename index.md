@@ -139,7 +139,7 @@ Giovinazzi (Italy)</p>
 <button class = "button" onclick="update(data2)">Home</button>
 
 <!-- Create a div where the graph will take place -->
-<div id="2019"></div>
+<div id="2019">
 
 
 <script>
@@ -206,3 +206,5 @@ function update(data) {
 update(data3)
 
 </script>
+
+</div>
