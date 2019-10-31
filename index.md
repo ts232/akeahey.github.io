@@ -19,6 +19,10 @@
   color: black;
   font-family: "Verdana", sans-serif;
 }
+  .h2 {
+  color: black;
+  font-family: "Verdana", sans-serif;
+}
 </style>
 
 <!-- Load d3.js -->
@@ -27,10 +31,15 @@
 <!-- Color scale -->
 <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
 
-<h1 class = "h1"> Vettel DNF Home vs. Away </h1>
+<h1 class = "h1"> The Home Race Curse</h1>
 
-<body> This visualization demonstrates the percentage of home (Germany) vs. away races in which Sebastian Vettel did not finish between 2016-2019. 
-  <p></p>
+<body>
+  
+<p>Everyone loves a good sports curse, but the home race curse in Formula 1 has been sent swirling with multiple failures among drivers in their home races. In order to explore whether the home race curse is a significant phenomenon or a freak coicidence, these visualizations have been created to compare Home and Away races of multiple drivers over the past few seasons.</p>
+
+<h2 class = "h2">Vettel Home vs. Away DNF</hr>
+  
+<p>This visualization demonstrates the percentage of home (Germany) vs. away races in which Sebastian Vettel did not finish between 2016-2019.</p>
 
 </body>
 
