@@ -37,6 +37,27 @@
 
 
 <h2 class = "h2">2019 Season</h2>
+  
+<p>This visualization demonstrates the percentage of home races among 14 drivers that raced at home that ended in DNF for home drivers and the percentage of away races for the same 14 drivers that raced away that ended in DNF.</p>
+<p>The 14 drivers that raced at home in 2019 were: <br>
+Vettel and Hulkenberg (Germany)<br>
+Hamilton, Norris, and Russell (Great Britain)<br>
+Gasly and Grosjean (France)<br> 
+Leclerc (Monaco)<br>
+Sainz (Spain)<br>
+Perez (Mexico)<br>
+Ricciardo (Australia)<br>
+Kvyat (Russia)<br>
+Stroll (Canada)<br>
+Giovinazzi (Italy)</p>
+
+<p>Of the 14 home races that occured, 4 of them ended in DNF for the home drivers, a percentage of about 29%.<br>
+
+However, of the 126 away races that occured in 2019 among the same 14 drivers, 18 ended in DNF, about 14%. </p>
+
+<!-- Add 2 buttons -->
+<button class = "button" onclick="update(data1)">Away</button>
+<button class = "button" onclick="update(data2)">Home</button>
 
 <!-- Create a div where the graph will take place -->
 <div id="season"></div>
@@ -109,25 +130,3 @@ function update(data) {
 update(data1)
 
 </script>
-
-
-<!-- Add 2 buttons -->
-<button class = "button" onclick="update(data3)">Away</button>
-<button class = "button" onclick="update(data4)">Home</button>
-  
-<p>This visualization demonstrates the percentage of home races among 14 drivers that raced at home that ended in DNF for home drivers and the percentage of away races for the same 14 drivers that raced away that ended in DNF.</p>
-<p>The 14 drivers that raced at home in 2019 were: <br>
-Vettel and Hulkenberg (Germany)<br>
-Hamilton, Norris, and Russell (Great Britain)<br>
-Gasly and Grosjean (France)<br> 
-Leclerc (Monaco)<br>
-Sainz (Spain)<br>
-Perez (Mexico)<br>
-Ricciardo (Australia)<br>
-Kvyat (Russia)<br>
-Stroll (Canada)<br>
-Giovinazzi (Italy)</p>
-
-<p>Of the 14 home races that occured, 4 of them ended in DNF for the home drivers, a percentage of about 29%.<br>
-
-However, of the 126 away races that occured in 2019 among the same 14 drivers, 18 ended in DNF, about 14%. </p>
