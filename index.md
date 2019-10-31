@@ -117,16 +117,27 @@ update(data1)
 </script>
 
 
-<h2 class = "h2">Vettel Home vs. Away DNF</h2>
+<h2 class = "h2">2019 </h2>
   
-<p>This visualization demonstrates the percentage of home (Germany) vs. away races in which Sebastian Vettel did not finish between 2016-2019.</p>
+<p>This visualization demonstrates the percentage of home races among 14 drivers that raced at home that ended in DNF for home drivers and the percentage of away races for the same 14 drivers that raced away that ended in DNF.</p>
+<p>The 14 drivers that raced at home in 2019 were: <br>
+Vettel and Hulkenberg (Germany)<br>
+Hamilton, Norris, and Russell (Great Britain)<br>
+Gasly and Grosjean (France)<br> 
+Leclerc (Monaco)<br>
+Sainz (Spain)<br>
+Perez (Mexico)<br>
+Ricciardo (Australia)<br>
+Kvyat (Russia)<br>
+Stroll (Canada)<br>
+Giovinazzi (Italy)</p>
 
 <!-- Add 2 buttons -->
 <button class = "button" onclick="update(data1)">Away</button>
 <button class = "button" onclick="update(data2)">Home</button>
 
 <!-- Create a div where the graph will take place -->
-<div id="vettel"></div>
+<div id="2019"></div>
 
 
 <script>
@@ -140,16 +151,16 @@ var width = 500
 var radius = Math.min(width, height) / 2 - margin
 
 
-var svg = d3.select("#vettel")
+var svg = d3.select("#2019")
   .append("svg")
     .attr("width", width)
     .attr("height", height)
   .append("g")
     .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
 
-// HAND ENTERED VETTEL DATA
-var data1 = {a: 92, b: 8}
-var data2 = {a: 67, b: 34}
+// HAND ENTERED 2019 DATA
+var data1 = {Finished: 92, DNF: 8}
+var data2 = {Finished: 67, DNF: 34}
 
 
 var color = d3.scaleOrdinal(['#dd0000','#ffa07a'])
