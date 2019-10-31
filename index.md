@@ -1,5 +1,6 @@
-This visualization demonstrates the percentage of home (Germany) vs. away races in which Sebastian Vettel did not finish between 2016-2019. 
+<title> Vettel DNF Home vs. Away </title>
 
+<body> This visualization demonstrates the percentage of home (Germany) vs. away races in which Sebastian Vettel did not finish between 2016-2019. </body>
 
 <meta charset="utf-8">
 
@@ -70,13 +71,6 @@ function update(data) {
 
   var u = svg.selectAll("path")
     .data(data_ready)
-
-svg.append("text")
-        .attr("x", (width / 2))             
-        .attr("y", 0 - (margin.top / 2))
-        .attr("text-anchor", "middle")  
-        .style("font-size", "16px")   
-        .text("Vettel DNF Away vs. Home");
 
   u
     .enter()
