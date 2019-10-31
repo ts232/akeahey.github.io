@@ -5,7 +5,7 @@ This visualization demonstrates the percentage of home (Germany) vs. away races 
 
 <style>
 .button {
-  background-color: #4CAF50;
+  background-color: #f16900;
   border: none;
   color: white;
   padding: 15px 25px;
@@ -15,7 +15,7 @@ This visualization demonstrates the percentage of home (Germany) vs. away races 
 }
 
 .button:hover {
-  background-color: green;
+  background-color: DarkOrange;
 }
 </style>
 
