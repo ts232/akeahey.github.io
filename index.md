@@ -115,3 +115,8 @@ function update(data) {
 update(data1)
 
 </script>
+
+
+<h2 class = "h2">Vettel Home vs. Away DNF</h2>
+  
+<p>This visualization demonstrates the percentage of home (Germany) vs. away races in which Sebastian Vettel did not finish between 2016-2019.</p>
