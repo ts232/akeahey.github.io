@@ -57,9 +57,7 @@ Kvyat (Russia)<br>
 Stroll (Canada)<br>
 Giovinazzi (Italy)</p>
 
-<p>Of the 14 home races that occured, 4 of them ended in DNF for the home drivers, a percentage of about 29%.<br>
-
-However, of the 126 away races that occured in 2019 among the same 14 drivers, 18 ended in DNF, about 14%. </p>
+<p>Each of the 14 drivers drove at home, giving us 14 home races in 10 countries and 126 away races in the same 10 countries. </p>
 
 <h3 class = "title">Finished vs. Unfinished Races</h3>
 
@@ -90,6 +88,31 @@ var data1 = {Finished: 71, DNF: 29}
 var data2 = {Finished: 86, DNF: 14}
 
 var color = d3.scaleOrdinal(['#dd0000', '#f08080'])
+
+var legend = d3.select('svg')
+  .append("g")
+  .selectAll("g")
+  .data(color.domain())
+  .enter()
+  .append("g")
+    .attr('class', 'legend')
+    .attr('transform', function(d, i) {
+      var height = legendRectSize;
+      var x = 0;
+      var y = i * height;
+      return 'translate(' + x + ',' + y + ')';
+    });
+    
+legend.append('rect')
+    .attr('width', legendRectSize)
+    .attr('height', legendRectSize)
+    .style('fill', color)
+    .style('stroke', color);
+
+legend.append('text')
+    .attr('x', legendRectSize + legendSpacing)
+    .attr('y', legendRectSize - legendSpacing)
+    .text(function(d) { return d; });
 
 function update(data) {
 
