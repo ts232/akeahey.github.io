@@ -30,48 +30,54 @@ This visualization demonstrates the percentage of home (Germany) vs. away races 
 <button class = "button" onclick="update(data2)">Home</button>
 
 <!-- Create a div where the graph will take place -->
-<div id="my_dataviz"></div>
+<div id="vettel"></div>
 
 
 <script>
 
-// set the dimensions and margins of the graph
+
 var width = 500
     height = 450
     margin = 40
 
-// The radius of the pieplot is half the width or half the height (smallest one). I subtract a bit of margin.
+
 var radius = Math.min(width, height) / 2 - margin
 
-// append the svg object to the div called 'my_dataviz'
-var svg = d3.select("#my_dataviz")
+
+var svg = d3.select("#vettel")
   .append("svg")
     .attr("width", width)
     .attr("height", height)
   .append("g")
     .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
 
-// create 2 data_set USING VETTEL
+// HAND ENTERED VETTEL DATA
 var data1 = {a: 92, b: 8}
 var data2 = {a: 67, b: 34}
 
-// set the color scale
+
 var color = d3.scaleOrdinal(['#dd0000','#ffa600'])
 
-// A function that create / update the plot for a given variable:
+
 function update(data) {
 
-  // Compute the position of each group on the pie:
+
   var pie = d3.pie()
     .value(function(d) {return d.value; })
     .sort(function(a, b) { console.log(a) ; return d3.ascending(a.key, b.key);} ) // This make sure that group order remains the same in the pie chart
   var data_ready = pie(d3.entries(data))
 
-  // map to data
+
   var u = svg.selectAll("path")
     .data(data_ready)
 
-  // Build the pie chart: Basically, each part of the pie is a path that we build using the arc function.
+svg.append("text")
+        .attr("x", (width / 2))             
+        .attr("y", 0 - (margin.top / 2))
+        .attr("text-anchor", "middle")  
+        .style("font-size", "16px")   
+        .text("Vettel DNF Away vs. Home");
+
   u
     .enter()
     .append('path')
@@ -87,14 +93,14 @@ function update(data) {
     .style("stroke-width", "2px")
     .style("opacity", 1)
 
-  // remove the group that is not present anymore
+
   u
     .exit()
     .remove()
 
 }
 
-// Initialize the plot with the first dataset
+
 update(data1)
 
 </script>
