@@ -37,7 +37,7 @@
   
 <p>Everyone loves a good sports curse, but the home race curse in Formula 1 has been sent swirling with multiple failures among drivers in their home races. In order to explore whether the home race curse is a significant phenomenon or a freak coicidence, these visualizations have been created to compare Home and Away races of multiple drivers over the past few seasons.</p>
 
-<h2 class = "h2">Vettel Home vs. Away DNF</hr>
+<h2 class = "h2">Vettel Home vs. Away DNF</h2>
   
 <p>This visualization demonstrates the percentage of home (Germany) vs. away races in which Sebastian Vettel did not finish between 2016-2019.</p>
 
