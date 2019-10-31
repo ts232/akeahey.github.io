@@ -2,7 +2,7 @@
 
 <style>
 .button {
-  background-color: #f16900;
+  background-color: #dcdcdc;
   border: none;
   color: white;
   padding: 15px 25px;
