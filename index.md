@@ -74,7 +74,7 @@ var data1 = {a: 92, b: 8}
 var data2 = {a: 67, b: 34}
 
 
-var color = d3.scaleOrdinal(['#dd0000','#ffa600'])
+var color = d3.scaleOrdinal(['#dd0000','#ffa07a'])
 
 
 function update(data) {
