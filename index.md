@@ -12,7 +12,7 @@
 }
 
 .button:hover {
-  background-color: DarkOrange;  
+  background-color: gainsboro;  
 }
 
  .h1 {
@@ -30,7 +30,7 @@
 <h1 class = "h1"> Vettel DNF Home vs. Away </h1>
 
 <body> This visualization demonstrates the percentage of home (Germany) vs. away races in which Sebastian Vettel did not finish between 2016-2019. 
-
+<br>
 
 </body>
 
