@@ -61,7 +61,7 @@ However, of the 126 away races that occured in 2019 among the same 14 drivers, 1
 <button class = "button" onclick="update(data2)">Home</button>
 
 <!-- Create a div where the graph will take place -->
-<div id="2019">
+<div id="2019"></div>
 
 
 <script>
@@ -128,5 +128,3 @@ function update(data) {
 update(data3)
 
 </script>
-
-</div>
