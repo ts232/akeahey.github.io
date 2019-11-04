@@ -122,30 +122,10 @@ function update(data) {
 
 update(data1)
 
-var legend = d3.select('svg')
-  .append("g")
-  .selectAll("g")
-  .data(color.domain())
-  .enter()
-  .append("g")
-    .attr('class', 'legend')
-    .attr('transform', function(d, i) {
-      var height = legendRectSize;
-      var x = 0;
-      var y = i * height;
-      return 'translate(' + x + ',' + y + ')';
-    });
-    
-legend.append('rect')
-    .attr('width', legendRectSize)
-    .attr('height', legendRectSize)
-    .style('fill', color)
-    .style('stroke', color);
-
-legend.append('text')
-    .attr('x', legendRectSize + legendSpacing)
-    .attr('y', legendRectSize - legendSpacing)
-    .text(function(d) { return d; });
+svg.append("circle").attr("cx",200).attr("cy",130).attr("r", 6).style("fill", "#dd0000")
+svg.append("circle").attr("cx",200).attr("cy",160).attr("r", 6).style("fill", "#f08080")
+svg.append("text").attr("x", 220).attr("y", 130).text("Finished").style("font-size", "15px").attr("alignment-baseline","middle")
+svg.append("text").attr("x", 220).attr("y", 160).text("DNF").style("font-size", "15px").attr("alignment-baseline","middle")
 
 </script>
 
