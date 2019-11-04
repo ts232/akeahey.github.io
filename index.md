@@ -148,3 +148,5 @@ legend.append('text')
     .text(function(d) { return d; });
 
 </script>
+
+<p>One further exploration would be how to quantify the "curse" beyond DNF record, for example as listed in <a href="https://www.reddit.com/r/formula1/comments/cpysq1/the_home_race_curse/">this</a> Reddit post. </p>
