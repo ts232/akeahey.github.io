@@ -62,8 +62,8 @@ Giovinazzi (Italy)</p>
 <h3 class = "title">Finished vs. Unfinished Races</h3>
 
 <!-- Add 2 buttons -->
-<button class = "button" onclick="update(data1)">Away</button>
-<button class = "button" onclick="update(data2)">Home</button>
+<button class = "button" onclick="update(data2)">Away</button>
+<button class = "button" onclick="update(data1)">Home</button>
 
 <!-- Create a div where the graph will take place -->
 <div id="season"></div>
