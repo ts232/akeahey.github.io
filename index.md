@@ -62,8 +62,8 @@ Giovinazzi (Italy)</p>
 <h3 class = "title">Finished vs. Unfinished Races</h3>
 
 <!-- Add 2 buttons -->
-<button class = "button" onclick="update(data2)">Away</button>
-<button class = "button" onclick="update(data1)">Home</button>
+<button class = "button" onclick="update(data1)">Away</button>
+<button class = "button" onclick="update(data2)">Home</button>
 
 <!-- Create a div where the graph will take place -->
 <div id="season"></div>
@@ -83,14 +83,9 @@ var svg = d3.select("#season")
     .attr("height", height)
   .append("g")
     .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
-    
-svg.append("circle").attr("cx",200).attr("cy",130).attr("r", 6).style("fill", "#dd0000")
-svg.append("circle").attr("cx",200).attr("cy",160).attr("r", 6).style("fill", "#f08080")
-svg.append("text").attr("x", 220).attr("y", 130).text("Finished").style("font-size", "15px").attr("alignment-baseline","middle")
-svg.append("text").attr("x", 220).attr("y", 160).text("DNF").style("font-size", "15px").attr("alignment-baseline","middle")
 
-var data1 = {Finished: 71, DNF: 29}
-var data2 = {Finished: 86, DNF: 14}
+var data1 = {Finished: 86, DNF: 14}
+var data2 = {Finished: 71, DNF: 29}
 
 var color = d3.scaleOrdinal(['#dd0000', '#f08080'])
 
@@ -126,6 +121,11 @@ function update(data) {
 }
 
 update(data1)
+
+svg.append("circle").attr("cx",200).attr("cy",130).attr("r", 6).style("fill", "#dd0000")
+svg.append("circle").attr("cx",200).attr("cy",160).attr("r", 6).style("fill", "#f08080")
+svg.append("text").attr("x", 220).attr("y", 130).text("Finished").style("font-size", "15px").attr("alignment-baseline","middle")
+svg.append("text").attr("x", 220).attr("y", 160).text("DNF").style("font-size", "15px").attr("alignment-baseline","middle")
 
 </script>
 
