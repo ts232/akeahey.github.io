@@ -87,7 +87,7 @@ var svg = d3.select("#season")
 var data1 = {Finished: 86, DNF: 14}
 var data2 = {Finished: 71, DNF: 29}
 
-var color = d3.scaleOrdinal(['#dd0000', '#f08080'])
+var color = d3.scaleOrdinal(['#b22222', '#cd5c5c'])
 
 function update(data) {
 
