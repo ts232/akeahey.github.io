@@ -59,7 +59,7 @@ Giovinazzi (Italy)</p>
 
 <p>Each of the 14 drivers drove at home, giving us 14 home races in 10 countries and 126 away races in the same 10 countries. </p>
 
-<h3 class = "title">Finished vs. Unfinished Races Beep</h3>
+<h3 class = "title">Finished vs. Unfinished Races</h3>
 
 <!-- Add 2 buttons -->
 <button class = "button" onclick="update(data1)">Away</button>
@@ -122,8 +122,8 @@ function update(data) {
 
 update(data1)
 
-svg.append("circle").attr("cx",200).attr("cy",150).attr("r", 6).style("fill", "#b22222")
-svg.append("circle").attr("cx",200).attr("cy",160).attr("r", 6).style("fill", "#cd5c5c")
+svg.append("circle").attr("cx",150).attr("cy",10).attr("r", 6).style("fill", "#b22222")
+svg.append("circle").attr("cx",150).attr("cy",40).attr("r", 6).style("fill", "#cd5c5c")
 svg.append("text").attr("x", 220).attr("y", 130).text("Finished").style("font-size", "15px").attr("alignment-baseline","middle")
 svg.append("text").attr("x", 220).attr("y", 160).text("DNF").style("font-size", "15px").attr("alignment-baseline","middle")
 
