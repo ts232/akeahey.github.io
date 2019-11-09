@@ -59,7 +59,7 @@ Giovinazzi (Italy)</p>
 
 <p>Each of the 14 drivers drove at home, giving us 14 home races in 10 countries and 126 away races in the same 10 countries. </p>
 
-<h3 class = "title">Finished vs. Unfinished Races</h3>
+<h3 class = "title">Finished vs. Unfinished Races Beep</h3>
 
 <!-- Add 2 buttons -->
 <button class = "button" onclick="update(data1)">Away</button>
