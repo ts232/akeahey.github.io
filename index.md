@@ -122,7 +122,7 @@ function update(data) {
 
 update(data1)
 
-svg.append("circle").attr("cx",200).attr("cy",130).attr("r", 6).style("fill", "#b22222")
+svg.append("circle").attr("cx",200).attr("cy",150).attr("r", 6).style("fill", "#b22222")
 svg.append("circle").attr("cx",200).attr("cy",160).attr("r", 6).style("fill", "#cd5c5c")
 svg.append("text").attr("x", 220).attr("y", 130).text("Finished").style("font-size", "15px").attr("alignment-baseline","middle")
 svg.append("text").attr("x", 220).attr("y", 160).text("DNF").style("font-size", "15px").attr("alignment-baseline","middle")
