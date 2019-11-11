@@ -37,7 +37,7 @@
 <!-- Color scale -->
 <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
 
-<h1 class = "h1"> The Home Race Curse</h1>
+<h1 class = "h1"> The Home Race Curse Beep</h1>
   
 <p>Everyone loves a good sports curse, but the home race curse in Formula 1 has been sent swirling with multiple failures among drivers in their home races. In order to explore whether the home race curse is a significant phenomenon or a freak coicidence, these visualizations have been created to compare Home and Away races of multiple drivers over the past few seasons.</p>
 
