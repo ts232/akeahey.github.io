@@ -66,7 +66,7 @@ Giovinazzi (Italy)</p>
 <button class = "button" onclick="update(data2)">Home</button>
 
 <!-- Create a div where the graph will take place -->
-<div id="season"></div>
+<div id="season">
 
 
 <script>
@@ -128,6 +128,8 @@ svg.append("text").attr("x", 160).attr("y", -210).text("Finished").style("font-s
 svg.append("text").attr("x", 160).attr("y", -180).text("DNF").style("font-size", "15px").attr("alignment-baseline","middle")
 
 </script>
+
+</div>
 
 <p>One further exploration would be how to quantify the "curse" beyond DNF record, for example as listed in <a href="https://www.reddit.com/r/formula1/comments/cpysq1/the_home_race_curse/">this</a> Reddit post. </p>
 
