@@ -131,3 +131,99 @@ svg.append("text").attr("x", 160).attr("y", -180).text("DNF").style("font-size",
 
 <p>One further exploration would be how to quantify the "curse" beyond DNF record, for example as listed in <a href="https://www.reddit.com/r/formula1/comments/cpysq1/the_home_race_curse/">this</a> Reddit post. </p>
 
+
+<!-- Create a div where the graph will take place -->
+<div>
+  
+<script>
+var svg = d3.select("svg"),
+            margin = {
+                top: 20,
+                right: 60,
+                bottom: 30,
+                left: 40
+            },
+
+            width = 700,
+            height = 500,
+            g = svg.append("g").attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+var y = d3.scaleBand()
+    .rangeRound([0, width])
+    .padding(0.2)
+    .align(0.1);
+
+var x = d3.scaleLinear()
+    .rangeRound([height, 0]);
+
+var z = d3.scaleOrdinal()
+    .range(['#b22222', '#cd5c5c']);
+
+var stack = d3.stack()
+    .offset(d3.stackOffsetExpand);
+
+d3.csv("data.csv", type, function (error, data) {
+    if (error) throw error;
+
+
+y.domain(data.map(function (d) {
+    return d.State;
+}));
+z.domain(data.columns.slice(1));
+
+var serie = g.selectAll(".serie")
+    .data(stack.keys(data.columns.slice(1))(data))
+    .enter().append("g")
+    .attr("class", "serie")
+    .attr("fill", function (d) {
+        return z(d.key);
+    });
+
+var bar = serie.selectAll("rect")
+    .data(function (d) {
+        return d;
+    })
+    .enter().append("rect")
+    .attr("y", function (d) {
+        return y(d.data.State);
+    })
+    .attr("x", function (d) {
+        return x(d[1]);
+    })
+    .attr("width", function (d) {
+        return x(d[0]) - x(d[1]);
+    })
+    .attr("height", y.bandwidth());
+
+bar.append("text")
+    .attr("x", function (d) {
+        return x(d[1]);
+    })
+    .attr("dy", "1.35em")
+    .text(function (d) { return d; });
+
+
+g.append("g")
+    .attr("class", "axis axis--y")
+    .call(d3.axisLeft(y));
+
+var legend = serie.append("g")
+    .attr("class", "legend")
+    .attr("transform", function (d) {
+        var d = d[0];
+        return "translate(" + ((x(d[0]) + x(d[1])) / 2) + ", " + (y(d.data.State) - y.bandwidth()) + ")";
+    });
+
+});
+
+function type(d, i, columns) {
+    var t;
+    for (i = 1, t = 0; i < columns.length; ++i) t += d[columns[i]] = +d[columns[i]];
+    d.total = t;
+    return d;
+}
+
+</script>
+
+
+</div>
