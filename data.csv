@@ -1,5 +1,24 @@
-State,Work,Stop,Idle
-Crew 1,64,10,10
-Crew 2,26,20,40
-Crew 3,72,30,5
-Crew 4,40,40,20
+State,DNF/DSQ,Finished
+Hamilton,3,71
+LeClerc,6,27
+Vettel,6,68
+Hulkenberg,22,52
+Ricciardo,16,58
+Perez,5,69
+Sainz,16,58
+Alonso,21,41
+Ocon,5,45
+Grosjean,18,56
+Gasly,6,32
+Vandoorne,8,34
+Stroll,8,45
+Hartley,9,16
+Sirotkin,3,18
+Kvyat,13,35
+Norris,4,8
+Giovanazzi,2,12
+Russell,0,12
+Massa,4,26
+Palmer,9,28
+Wehrlein,8,31
+Rosberg,1,20
