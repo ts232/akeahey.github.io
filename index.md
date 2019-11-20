@@ -151,8 +151,8 @@ var svg = d3.select("svg"),
                 left: 60
             },
 
-width = 500,
-height = 450,
+width = 450,
+height = 400,
 g = svg.append("g").attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
 var y = d3.scaleBand()
