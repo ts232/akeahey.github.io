@@ -31,7 +31,7 @@
 
 div.relative {
   position: absolute;
-  top: 1700px;
+  top: 700px;
 }
 
 </style>
