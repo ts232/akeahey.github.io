@@ -136,7 +136,6 @@ svg.append("text").attr("x", 160).attr("y", -180).text("DNF").style("font-size",
 
 <!-- Create a div where the graph will take place -->
 <div id="drivers">
-<svg width="550" height="550"></svg>
 <script>
 var svg = d3.select("drivers"),
             margin = {
@@ -146,8 +145,9 @@ var svg = d3.select("drivers"),
                 left: 60
             },
 
-width = 450,
-height = 400,
+var width = 450,
+    height = 400,
+    
 g = svg.append("g").attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
 var y = d3.scaleBand()
