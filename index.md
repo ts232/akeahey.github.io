@@ -145,8 +145,8 @@ var svg = d3.select("drivers"),
                 left: 60
             },
 
-var width = 450,
-    height = 400,
+var width = 450;
+    height = 400;
     
 g = svg.append("g").attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
