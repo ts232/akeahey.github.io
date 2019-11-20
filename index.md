@@ -140,10 +140,10 @@ svg.append("text").attr("x", 160).attr("y", -180).text("DNF").style("font-size",
 
 
 <!-- Create a div where the graph will take place -->
-<div class="relative">
+<div class="relative" id="drivers">
 <svg width="550" height="550"></svg>
 <script>
-var svg = d3.select("svg"),
+var svg = d3.select("drivers"),
             margin = {
                 top: 20,
                 right: 60,
