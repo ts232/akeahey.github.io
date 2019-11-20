@@ -29,10 +29,6 @@
   font-family: "Verdana", sans-serif;
 }
 
-div.relative {
-  position: absolute;
-}
-
 </style>
 
 <!-- Load d3.js -->
@@ -139,7 +135,7 @@ svg.append("text").attr("x", 160).attr("y", -180).text("DNF").style("font-size",
 
 
 <!-- Create a div where the graph will take place -->
-<div class="relative" id="drivers">
+<div id="drivers">
 <svg width="550" height="550"></svg>
 <script>
 var svg = d3.select("drivers"),
