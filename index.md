@@ -139,7 +139,7 @@ svg.append("text").attr("x", 160).attr("y", -180).text("DNF").style("font-size",
   FOO
 <script>
   console.log("hi");
-var svg = d3.select("drivers"),
+var svg = d3.select("#drivers"),
             margin = {
                 top: 20,
                 right: 60,
