@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
 <head>
 <style>
@@ -6,9 +5,9 @@
   color: #3E7824;
   font-family: verdana;
 }
-  h3 {
+  h4 {
   color: black;
-  font-family: verdana;
+  font-family: courier;
   font-style: italic
 }
   .center {
@@ -28,19 +27,21 @@
 <body>
 
 <h1 class = "center">About Amber</h1>
-<h3 class ="center">"Let us prepare to grapple with the ineffable itself, and see if we may not eff it after all. -Douglas Adams"</h3>
-<p>This project, inspired by some of <a href = "https://twitter.com/kable_codes/status/1151659915913490434" target = "_blank">my favourite formula one race visualizations</a>, will create a "racemap" of the premier league season based on standings each week. </p>
-<p>Already, the steady standing of Liverpool at first position, the fall and rise of Tottenham, the surprising success of newly promoted Sheffield United, and the chaos of week 12 are creating interesting questions: </p>
+<h4 class ="center">"Let us prepare to grapple with the ineffable itself, and see if we may not eff it after all. -Douglas Adams"</h4>
+
+<p>Amber is currently a third year at the University of Chicago studying Linguistics, Computer Science, and Neuroscience. She loves exploring data in creative ways.</p>
+
+<p>Currently, Amber works on:
 <ul>
-  <li><i>Compared to other seasons, how typical is this year's pattern of movement on the table?</i>
-  <ul><li>Currently working on a web scraper to collect data from past seasons (skyscraping.py)</li>
-      <li>Also hoping to create an interactive tool to compare seasons with d3.js</li></ul></li>
-  <li><i>After which week are the relative positions of teams mostly set?</i>
-  <ul><li>Would also be interesting to compare points over each season to compare breakaways with statistical analysis</li>
-      <li>Could lead to an even more interesting question: which games do you HAVE to win in order to succeed?</li></ul></li>
+  <li> Personal data projects (linked to the left)</li>
+  <li> Population-level depression screening at Primary Care Group Behavioral Helath Integration Program at UChicago Medicine</li>
+  <li> Modeling gesture language at the <a href= "http://clml.uchicago.edu/about.html">Chicago Language Modeling Lab</a>
 </ul>
-<p></p>
-<img src="https://66.media.tumblr.com/a883316f5672836e7cdd3e0ac60c6dde/e06990d440d89e52-a4/s2048x3072/32150c197427cb620443317d35eca6de8872b697.png" width = "700">
+</p>
+
+<p>Aside from coding, Amber also plays rugby for the UChicago Womxn's Rugby Club, does ballet, and enjoys embroidering, writing, and hiking.</p>
+
+<p>Amber primarily works in Python and JavaScript, but will also code in C, Swift, R, or whatever is needed to get the job done. During her time at UChicago, Amber has gained experience in natural language processing, data management and visualization, and machine learning.</p>
 
 </body>
 </html>
