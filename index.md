@@ -39,7 +39,7 @@
 </ul>
 </p>
 
-<p>Aside from coding, Amber also plays rugby for the UChicago Womxn's Rugby Club, does ballet, and enjoys embroidering, writing, and hiking.</p>
+<p>Aside from coding, Amber also plays for the UChicago Womxn's Rugby Club, does ballet, advocates for mental health resources, and enjoys embroidering, writing, and hiking.</p>
 
 <p>Amber primarily works in Python and JavaScript, but will also code in C, Swift, R, or whatever is needed to get the job done. During her time at UChicago, Amber has gained experience in natural language processing, data management and visualization, and machine learning.</p>
 
