@@ -35,7 +35,7 @@
 <ul>
   <li> Personal data projects (linked to the left)</li>
   <li> Population-level depression screening at Primary Care Group Behavioral Helath Integration Program at UChicago Medicine</li>
-  <li> Modeling gesture language at the <a href= "http://clml.uchicago.edu/about.html">Chicago Language Modeling Lab</a>
+  <li> Modeling gesture language at the <a href= "http://clml.uchicago.edu/about.html">Chicago Language Modeling Lab</a></li>
 </ul>
 </p>
 
