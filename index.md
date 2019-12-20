@@ -1,1 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  h1 {
+  color: #3E7824;
+  font-family: verdana;
+}
+  h3 {
+  color: black;
+  font-family: verdana;
+  font-style: italic
+}
+  .center {
+  text-align: center;
+}
+  p  {
+  color: black;
+  font-family: verdana;
+}
+  li  {
+  color: black;
+  font-family: verdana;
+}
+</style>
+</head>
 
+<body>
+
+<h1 class = "center">About Amber</h1>
+<h3 class ="center">"Let us prepare to grapple with the ineffable itself, and see if we may not eff it after all. -Douglas Adams"</h3>
+<p>This project, inspired by some of <a href = "https://twitter.com/kable_codes/status/1151659915913490434" target = "_blank">my favourite formula one race visualizations</a>, will create a "racemap" of the premier league season based on standings each week. </p>
+<p>Already, the steady standing of Liverpool at first position, the fall and rise of Tottenham, the surprising success of newly promoted Sheffield United, and the chaos of week 12 are creating interesting questions: </p>
+<ul>
+  <li><i>Compared to other seasons, how typical is this year's pattern of movement on the table?</i>
+  <ul><li>Currently working on a web scraper to collect data from past seasons (skyscraping.py)</li>
+      <li>Also hoping to create an interactive tool to compare seasons with d3.js</li></ul></li>
+  <li><i>After which week are the relative positions of teams mostly set?</i>
+  <ul><li>Would also be interesting to compare points over each season to compare breakaways with statistical analysis</li>
+      <li>Could lead to an even more interesting question: which games do you HAVE to win in order to succeed?</li></ul></li>
+</ul>
+<p></p>
+<img src="https://66.media.tumblr.com/a883316f5672836e7cdd3e0ac60c6dde/e06990d440d89e52-a4/s2048x3072/32150c197427cb620443317d35eca6de8872b697.png" width = "700">
+
+</body>
+</html>
