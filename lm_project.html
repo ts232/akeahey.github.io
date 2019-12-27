@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  body {
+  background-color: #ebebeb;
+}
+  h1 {
+  color: #000066;
+  font-family: verdana;
+}
+  h4 {
+  color: black;
+  font-family: verdana;
+}
+  .center {
+  text-align: center;
+}
+  * {
+  box-sizing: border-box;
+}
+  .box {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+  .img-container {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+  .clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+  p  {
+  color: black;
+  font-family: verdana;
+}
+  li  {
+  color: black;
+  font-family: verdana;
+}
+</style>
+</head>
+  
+<body>
+
+<h1 class = "center">Which Translation of <i>Les Miserables</i> Is The Best?</h1>
+<h4 class = "center">A long time lover of <i>Les Miserables</i>, a discussion with a friend about the thematic differences between the English and French versions of the novel got me thinking: could the translation of the novel from French to English has altered it's emotional meaning? Are some translations better than others at staying true to Hugo's original emotional intent?</h4>
+<p>In order to explore this question, I ran two English translations of Les Mis through sentiment analysis in R and compared them to the results of the same process on the original French.</p>
+<p>Below is a side by side comparison of the basic positive/negative sentiment of the two English translations, using the same nrc database for sentiment. Clearly, these graphs show that a difference exists between the two translations in terms of overall sentiment.</p>
+
+<div class="clearfix">
+<div class="box">
+<p class = "center"><b>Translation by: Isabel Hapgood, 1887</b></p>
+</div>
+<div class="box">
+<p class = "center"><b>Translation by: Lascelles Wraxal, 1862</b></p>
+</div>
+<div class = "img-container">
+<img src="https://66.media.tumblr.com/11ed79c7edb94f09c083be9bb5974722/01c3b4f0f1447aa5-34/s1280x1920/3c973fcdf189a45d9babeac433bf0109521ee74a.png" style = "width:100%">
+</div>
+<div class = "img-container">
+<img src="https://66.media.tumblr.com/66118010633315d8998f60ab6c2c61b6/01c3b4f0f1447aa5-bf/s1280x1920/619bd273cba9b0a16e06f3fed4578c7e3caf04ab.png" style = "width:100%">
+</div>
+</div>
+
+<p><b>A Personal Note:</b></p>
+<p>After this data exploration, I also offer my own, subjective measure of a translation's value.</p>
+<p>In chapter VI of Book I of Volume IV, Enjolras says "be serious," a line which is translated the same way in every translation from the original "<i>sois serieux</i>".</p>
+<p>However, in the next line, Grantaire responds "<i>je suis farouche</i>," which has been translated many different ways, including "timid" (Wraxal, 1887), "wild" (Hapgood, 1862), and "unflinching" (Denny, 1976).</p>
+<p>The meaning of the French word <i>farouche</i> lies somewhere between the English "feral" and "shy"- like a cornered, untamed animal that recoils from being touched.</p>
+<p>Given this definition and the context in which it is said, Hapgood's translation to "wild" seems to be the most accurate. </p>
+<p>While one word is not enough to write a translation's sentence, this particular line is beloved by many fans of <i>Les Miserables</i>, including myself, and gives it a special commemoration in the eyes of dedicated readers.</p>
+
+<p><b>Future goals for this project include:</b></p>
+<ul>
+  <li>Finishing the French sentiment analysis for comparison</li>
+  <li>Finding for text files for other translations!</li>
+  <li>To what extent can sentiment analysis account for overall emotional tone in an analysis like this?</li>
+  <li>Why might these differences between translations/the original exist?</li>
+</ul>
+
+</body>
+</html>
